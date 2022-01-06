@@ -1083,19 +1083,36 @@ body {
     max-width: 1280px
 }
 
+
 .beta__form {
-    margin-top: 50px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
 }
 
-.beta__form > label > input {
-    height: 35px;
-    width: 300px;
+.beta__form > label {
+    padding: 0 48px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    color: rgba(255, 255, 255, .75);
+    font-weight: 500;
 }
 
-.beta__form > label {
-    margin-bottom: 25px;
+.beta__form > label > input {
+    margin-top: 10px;
+    padding: 0 14px;
+    height: 40px;
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    border: 0;
+    background-color: rgba(255, 255, 255, .1);
+    outline: none;
+    color: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .form__wrapper {
@@ -1104,36 +1121,66 @@ body {
 }
 
 .form__box {
-    margin-top: 145px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 150px;
+    margin-bottom: 60px;
+    padding-top: 35px;
     background-color: rgba(255, 255, 255, .04);
     border-radius: 4px;
     cursor: default;
-    padding: 45px 45px 45px 45px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
 }
 
-.submit__button {
-    padding: 0 30px;
-    height: 36px;
-    border-radius: 14px;
+.form__box h2 {
+    padding: 0 48px;
+    margin-bottom: 4px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.form__footer {
+    margin-top: 20px;
+    padding: 24px 48px;
+    display: flex;
+    justify-content: flex-end;
     background-color: rgba(255, 255, 255, .04);
+}
+
+.submit-button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #fed02f;
     color: #fff;
     font-size: 16px;
     font-weight: 500;
+    color: #101020;
     cursor: pointer;
     transition: background-color .1s;
-    background-color: #146aff;
 }
 
-.submit__button:hover {
-    background-color: #2877ff;
+.submit-button:hover {
+    background-color: #e6f55e;
 }
 
-.submit__button__wrapper {
-    margin-top: 25px;
-    display: flex;
-    justify-content: center;
+@media screen and (max-width: 500px) {
+    .form__box {
+        border-radius: 0;
+        padding-top: 80px;
+    }
+
+    .beta__form > label > input {
+        height: 44px;
+    }
+
+    .form__footer {
+        padding: 30px 48px;
+        margin-top: 40px;
+    }
+
+    .submit-button {
+        padding: 14px 20px;
+    }
 }
