@@ -1,0 +1,21 @@
+<svg width="108" height="108" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.35" filter="url(#filter0_f_62_65)">
+<circle cx="54" cy="54" r="24" fill="url(#paint0_radial_62_65)"/>
+</g>
+<path d="M60.0599 50.04L71.3799 42.46C72.5199 41.7 72.8199 40.14 72.0599 39.02L68.4199 33.6C67.6599 32.46 66.0999 32.16 64.9799 32.92L53.6599 40.5L60.0599 50.04Z" fill="#5A4D2A" fill-opacity="0.35" stroke="#FED02F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M54.3476 41.4585L44.7922 47.8582L49.912 55.5025L59.4674 49.1028L54.3476 41.4585Z" fill="#5A4D2A" fill-opacity="0.35" stroke="#FED02F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M41.66 60.3L49.56 55.02L45.08 48.34L37.18 53.62C36.26 54.24 36.02 55.48 36.64 56.4L38.9 59.76C39.5 60.66 40.74 60.9 41.66 60.3Z" fill="#5A4D2A" fill-opacity="0.35" stroke="#FED02F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M54.1 52.9L45.12 72.5" stroke="#FED02F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M54 52.9L62.88 72.5" stroke="#FED02F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<filter id="filter0_f_62_65" x="0" y="0" width="108" height="108" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="15" result="effect1_foregroundBlur_62_65"/>
+</filter>
+<radialGradient id="paint0_radial_62_65" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(54 54) rotate(90) scale(24)">
+<stop stop-color="#FED02F"/>
+<stop offset="1" stop-color="#FED02F" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>
