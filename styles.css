@@ -64,7 +64,7 @@ header {
     }
 }
 
-.logo__container {
+.logo__container a {
     display: flex;
     align-items: center
 }
