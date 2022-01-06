@@ -364,7 +364,8 @@ section#introduction {
 .player__play.paused {
     background-image: url("./src/play.svg");
     background-position: 45px center;
-    background-size: 40px
+    background-size: 40px;
+    opacity: 1
 }
 
 .player__sound {
