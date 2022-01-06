@@ -69,6 +69,11 @@ header {
     align-items: center
 }
 
+header .logo__container img {
+    width: 60px;
+    height: 60px
+}
+
 .logo__container p {
     margin-left: 24px;
     height: 60px;
