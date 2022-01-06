@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Stonks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../favicon-32x32.png" type="image/png">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap"
+            rel="stylesheet">
+</head>
+
+<body>
+<div class="page__container">
+    <header>
+        <a href="../index.html">
+            <div class="logo__container">
+                <img src="../src/logo.png" />
+                <p>stonks</p>
+            </div>
+        </a>
+        <button class="header__hamburger-menu"></button>
+        <nav>
+            <a href="https://stonks.cash/beta-form">
+                <button class="blue">Join dApp beta program</button>
+            </a>
+            <button class="soon">Whitepaper</button>
+            <a href="mailto:stonks.cash@protonmail.com" rel="noopener">
+                <button>stonks.cash@protonmail.com</button>
+            </a>
+            <div class="nav__group">
+                <a href="https://twitter.com/StonksCoinBSC" target="_blank" rel="noopener">
+                    <button class="icon twitter"></button>
+                </a>
+                <a href="https://discord.gg/Ctg5cpHpZX" target="_blank" rel="noopener">
+                    <button class="icon discord"></button>
+                </a>
+                <a href="https://t.me/stonksCoinBsc" target="_blank" rel="noopener">
+                    <button class="icon telegram"></button>
+                </a>
+                <a href="https://www.reddit.com/r/stonkscoinbsc" target="_blank" rel="noopener">
+                    <button class="icon reddit"></button>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="form__wrapper">
+            <div class="form__box">
+                <h2>Join private beta</h2>
+                <form class="beta__form" action="https://formspree.io/f/xdobozgq"
+                      method="POST">
+                    <label>
+                        Your email: <br/>
+                        <input type="email" name="_replyto"/>
+                    </label>
+                    <label>
+                        Your nickname: <br/>
+                        <input name="message"/>
+                    </label>
+                    <div class="submit__button__wrapper">
+                        <button class="submit__button" type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer__links">
+            <a href="https://github.com/TheStonks" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://t.me/stonksCoinBsc" target="_blank" rel="noopener">Telegram</a>
+            <a href="https://discord.gg/Ctg5cpHpZX" target="_blank" rel="noopener">Discord</a>
+            <a href="https://twitter.com/StonksCoinBSC" target="_blank" rel="noopener">Twitter</a>
+            <a href="https://www.reddit.com/r/stonkscoinbsc" target="_blank" rel="noopener">Reddit</a>
+        </div>
+        <div class="footer__disclaimer">
+            Donate us: <strong id="donate-address">0x845725fd6d74640A70e7ddd7e44f4A185C6C1C5b</strong><br/>
+            Stonks project is mainly driven by the community, by sending a donation you support the project.<br/>
+            <br/>
+            Creators of Stonks are not liable for any loss when trading this cryptocurrency token.<br/>
+            Nothing on this page is financial advice.
+        </div>
+    </footer>
+</div>
+<script src="../home.js"></script>
+</body>
+</html>
