@@ -6,20 +6,18 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Stonks</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="../favicon-32x32.png" type="image/png">
+    <link rel="icon" href="favicon-32x32.png" type="image/png">
     <link rel="stylesheet" href="../styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap"
-            rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto:wght@400;500&display=swap">
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PC2B2H7XES"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-PC2B2H7XES');
     </script>
 </head>
@@ -35,8 +33,8 @@
         </div>
         <button class="header__hamburger-menu"></button>
         <nav>
-            <a href="./form">
-                <button class="blue">Join dApp beta program</button>
+            <a href="./dapp">
+                <button class="blue">DApp public beta</button>
             </a>
             <button class="soon">Whitepaper</button>
             <a href="mailto:stonks.cash@protonmail.com" rel="noopener">
@@ -59,25 +57,32 @@
         </nav>
     </header>
     <main>
-        <div class="form__wrapper">
-            <div class="form__box">
-                <h2>Join closed beta program</h2>
-                <form class="beta__form" action="https://formspree.io/f/xdobozgq"
-                      method="POST">
-                    <label>
-                        Your email address
-                        <input type="email" name="_replyto" spellcheck="false"/>
-                    </label>
-                    <label>
-                        Your nickname
-                        <input name="message" spellcheck="false"/>
-                    </label>
-                    <div class="form__footer">
-                        <button class="submit-button" type="submit">Send my request</button>
-                    </div>
-                </form>
+        <section id="timer">
+            <div class="timer__background"></div>
+            <div class="timer__meme-man-face"></div>
+            <div class="timer__title">Stonks open beta dApp release in</div>
+            <div class="timer__countdown">
+                <div class="timer__span timer__span--days">
+                    <p class="timer__number">2</p>
+                    <p class="timer__unit">days</p>
+                </div>
+                <div class="timer__delimeter"></div>
+                <div class="timer__span timer__span--hours">
+                    <p class="timer__number">10</p>
+                    <p class="timer__unit">hours</p>
+                </div>
+                <div class="timer__delimeter"></div>
+                <div class="timer__span timer__span--minutes">
+                    <p class="timer__number">07</p>
+                    <p class="timer__unit">minutes</p>
+                </div>
+                <div class="timer__delimeter"></div>
+                <div class="timer__span timer__span--seconds">
+                    <p class="timer__number">59</p>
+                    <p class="timer__unit">seconds</p>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
     <footer>
         <div class="footer__links">
@@ -97,5 +102,6 @@
     </footer>
 </div>
 <script src="../home.js"></script>
+<script src="dapp.js"></script>
 </body>
 </html>

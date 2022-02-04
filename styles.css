@@ -991,12 +991,117 @@ section#rewards iframe {
     margin-top: 60px;
     width: 100%;
     max-width: 750px;
-    height: 830px
+    height: 530px
+}
+
+section#timer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 682px;
+    width: 100%;
+    margin-top: 120px;
+    user-select: none;
+}
+
+section#timer .timer__background {
+    position: absolute;
+    top: -50px;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-image: url('./src/timer_background_hq.png');
+    mix-blend-mode: overlay;
+    -webkit-mask-image: radial-gradient(#ffffff 30%, transparent 80%);
+    mask-image: radial-gradient(red, transparent);
+    opacity: 0.3;
+    z-index: -1;
+}
+
+section#timer .timer__meme-man-face {
+    position: absolute;
+    top: 20px;
+    background-image: url('./src/timer_meme_man_face.png');
+    width: 310px;
+    height: 296px;
+    mask-image: linear-gradient(to bottom, #ffffff, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, #ffffff, transparent);
+    opacity: 0.7;
+    z-index: -1;
+}
+
+section#timer .timer__title {
+    padding: 0 8px;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+section#timer .timer__countdown {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+}
+
+section#timer .timer__delimeter {
+    margin-top: -16px;
+    width: 2px;
+    height: 16px;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+section#timer .timer__span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 140px;
+}
+
+section#timer .timer__span--days {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 96px;
+}
+
+section#timer .timer__number {
+    color: #fed02f;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 72px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 560px) {
+    section#timer .timer__title {
+        font-size: 30px;
+    }
+
+    section#timer .timer__span {
+        width: 80px;
+    }
+
+    section#timer .timer__span--days {
+        width: 58px;
+    }
+
+    section#timer .timer__number {
+        font-size: 48px;
+    }
+}
+
+section#timer .timer__unit {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 18px;
+    font-weight: 400;
 }
 
 footer {
     margin-top: 150px;
     margin-bottom: 40px;
+    padding: 0 8px;
     width: 100%;
     font-size: 14px;
     font-weight: 500;
@@ -1009,7 +1114,8 @@ footer .footer__links {
 }
 
 footer .footer__links a {
-    margin: 8px
+    margin: 8px;
+    line-height: 32px;
 }
 
 footer .footer__disclaimer {
@@ -1081,106 +1187,4 @@ body {
     margin: 0 auto;
     width: 100%;
     max-width: 1280px
-}
-
-
-.beta__form {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-}
-
-.beta__form > label {
-    padding: 0 48px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 25px;
-    color: rgba(255, 255, 255, .75);
-    font-weight: 500;
-}
-
-.beta__form > label > input {
-    margin-top: 10px;
-    padding: 0 14px;
-    height: 40px;
-    display: block;
-    width: 100%;
-    border-radius: 4px;
-    border: 0;
-    background-color: rgba(255, 255, 255, .1);
-    outline: none;
-    color: #f0f0f0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.form__wrapper {
-    display: flex;
-    justify-content: center;
-}
-
-.form__box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    max-width: 500px;
-    margin-top: 150px;
-    margin-bottom: 60px;
-    padding-top: 35px;
-    background-color: rgba(255, 255, 255, .04);
-    border-radius: 4px;
-    cursor: default;
-}
-
-.form__box h2 {
-    padding: 0 48px;
-    margin-bottom: 4px;
-    font-size: 24px;
-    font-weight: 500;
-}
-
-.form__footer {
-    margin-top: 20px;
-    padding: 24px 48px;
-    display: flex;
-    justify-content: flex-end;
-    background-color: rgba(255, 255, 255, .04);
-}
-
-.submit-button {
-    padding: 10px 20px;
-    border-radius: 4px;
-    background-color: #fed02f;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 500;
-    color: #101020;
-    cursor: pointer;
-    transition: background-color .1s;
-}
-
-.submit-button:hover {
-    background-color: #e6f55e;
-}
-
-@media screen and (max-width: 500px) {
-    .form__box {
-        border-radius: 0;
-        padding-top: 80px;
-    }
-
-    .beta__form > label > input {
-        height: 44px;
-    }
-
-    .form__footer {
-        padding: 30px 48px;
-        margin-top: 40px;
-    }
-
-    .submit-button {
-        padding: 14px 20px;
-    }
 }

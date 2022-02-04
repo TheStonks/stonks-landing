@@ -10,16 +10,14 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap"
-        rel="stylesheet">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics --> 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PC2B2H7XES"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-PC2B2H7XES');
     </script>
 </head>
@@ -29,13 +27,13 @@
         <header>
             <div class="logo__container">
                 <a href="/">
-                    <img src="../src/logo.png" />
+                    <img src="src/logo.png" />
                     <p>stonks</p>
                 </a>
             </div>
             <button class="header__hamburger-menu"></button>
             <nav>
-                <a href="./pages/form"><button class="blue">Join dApp beta program</button></a>
+                <a href="./pages/dapp"><button class="blue">DApp public beta</button></a>
                 <button class="soon">Whitepaper</button>
                 <a href="mailto:stonks.cash@protonmail.com" rel="noopener"><button>stonks.cash@protonmail.com</button></a>
                 <div class="nav__group">
@@ -310,7 +308,7 @@
             <section id="rewards">
                 <div class="rewards__icon"></div>
                 <h1>Track your STONKs rewards</h1>
-                <iframe src="https://trackbsc.com/earnings?token=0x52FD0dB7597c332C0D3449A35F03625D881C3117" frameborder="0"></iframe>
+                <iframe src="https://trackbsc.com/earnings?token=0x52FD0dB7597c332C0D3449A35F03625D881C3117" frameborder="0" scrolling="no"></iframe>
             </section>
         </main>
         <footer>
@@ -331,5 +329,6 @@
         </footer>
     </div>
     <script src="home.js"></script>
+    <script src="player.js"></script>
 </body>
 </html>
