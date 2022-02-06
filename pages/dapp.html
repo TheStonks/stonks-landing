@@ -9,14 +9,11 @@
     <link rel="icon" href="../favicon-32x32.png" type="image/png">
     <link rel="icon" href="../favicon-32x32.ico" type="image/x-icon">
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="dapp.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto:wght@400;500&display=swap">
     
-    <script>
-        (Date.now() >= 1644177600000) && (location.href = '/pages/guide');
-    </script>
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PC2B2H7XES"></script>
     <script>
@@ -62,31 +59,107 @@
         </nav>
     </header>
     <main>
-        <section id="timer">
-            <div class="timer__background"></div>
-            <div class="timer__meme-man-face"></div>
-            <div class="timer__title">Stonks open beta dApp release in</div>
-            <div class="timer__countdown">
-                <div class="timer__span timer__span--days">
-                    <p class="timer__number">2</p>
-                    <p class="timer__unit">days</p>
-                </div>
-                <div class="timer__delimeter"></div>
-                <div class="timer__span timer__span--hours">
-                    <p class="timer__number">10</p>
-                    <p class="timer__unit">hours</p>
-                </div>
-                <div class="timer__delimeter"></div>
-                <div class="timer__span timer__span--minutes">
-                    <p class="timer__number">07</p>
-                    <p class="timer__unit">minutes</p>
-                </div>
-                <div class="timer__delimeter"></div>
-                <div class="timer__span timer__span--seconds">
-                    <p class="timer__number">59</p>
-                    <p class="timer__unit">seconds</p>
-                </div>
+        <section id="disclaimer" style="display: none;">
+            <div class="disclaimer__container">
+                <h1>Disclaimer</h1>
+                <p>By proceeding further you confirm that you have read the guide on how to use BSC Testnet on your metamask wallet.</p>
+                <p>To report bugs, join our channel on Discord: <a href="https://discord.gg/QRx7UV6n" target="_blank" rel="noopener">discord.gg/QRx7UV6n</a></p>
+                <p>If you have any suggestions on how to improve the functioning or design of <span>the application</span>, please use the Discord server mentioned above.</p>
+                <p>Please keep in mind that the application is in the testing phase, every bug you find will be fixed and verified on an ongoing basis. Some functions and the whole application may sometimes be unavailable - this might happen at any given time and it means that works are being taken at that time. <span>The expected launch date</span> of the application depends on the course and duration of the tests.</p>
+                <p>Please note that the wallet connection using Testnet is completely secure. However, <span>if you are concerned</span>, please use the new wallet created specifically for the beta test.</p>
+                <p>If you have any questions please contact us on Discord or Telegram:<br/> <a href="https://t.me/stonksCoinBsc" target="_blank" rel="noopener">t.me/stonksCoinBsc</a></p>
+                <p>Thank you very much for your trust and cooperation.</p>
+                <button class="disclaimer__accept">I have read and understand</button>
             </div>
+        </section>
+        <section id="guide">
+            <div class="guide__section">
+                <div class="guide__header">Install MetaMask</div>
+                <ol class="guide__steps">
+                    <li>Download and install <a href="https://metamask.io/download/" rel="noopener" target="_blank">official MetaMask browser extension</a></li>
+                    <li>Create a new wallet, MetaMask password and Secret Recovery Phrase</li>
+                    <li>Add BSC Testnet chain - used for testing purposes only</li>
+                </ol>
+            </div>
+            <div class="guide__section">
+                <div class="guide__header">Add BSC Testnet chain</div>
+                <ol class="guide__steps">
+                    <li>Open <strong>Networks</strong> menu in MetaMask</li>
+                    <li>Click <strong>Add Network</strong></li>
+                    <li>Setup a network:
+                        <div class="note">
+                            <div class="note__item">
+                                <span class="note__key">Network Name:</span>
+                                <span class="note__value">BSC Testnet</span>
+                            </div>
+                            <div class="note__item">
+                                <span class="note__key">New RPC URL:</span>
+                                <span class="note__value">https://data-seed-prebsc-1-s1.binance.org:8545/</span>
+                            </div>
+                            <div class="note__item">
+                                <span class="note__key">Chain ID:</span>
+                                <span class="note__value">97</span>
+                            </div>
+                            <div class="note__item">
+                                <span class="note__key">Currency Symbol:</span>
+                                <span class="note__value">BNB</span>
+                            </div>
+                            <div class="note__item">
+                                <span class="note__key">Block Explorer URL:</span>
+                                <span class="note__value">https://testnet.bscscan.com</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>Click <strong>Save</strong></li>
+                </ol>
+            </div>
+            <div class="guide__section">
+                <div class="guide__header">Add BNB to your wallet</div>
+                <ol class="guide__steps">
+                    <li>Copy your wallet's address in MetaMask</li>
+                    <li>Go to <a href="https://testnet.binance.org/faucet-smart" target="_blank" rel="noopener">Binance Smart Chain Faucet</a> page</li>
+                    <li>Paste your wallet's address</li>
+                    <li>Click <strong>Give me BNB</strong></li>
+                    <li>Wait a few seconds for the transaction to be completed</li>
+                </ol>
+            </div>
+            <div class="guide__section">
+                <div class="guide__header">Connect your wallet</div>
+                <ol class="guide__steps">
+                    <li>Go to <a href="#showdisclaimer" target="_blank" rel="noopener">Stonksapp website</a></li>
+                    <li>Click <strong>the wallet icon</strong> in the top right corner of the website</li>
+                    <li>Select your account in MetaMask</li>
+                    <li>Click <strong>Next</strong></li>
+                    <li>Click <strong>Connect</strong></li>
+                    <li>Click <strong>Sign</strong></li>
+                </ol>
+            </div>
+            <div class="guide__section">
+                <div class="guide__header">Swap</div>
+                <ol class="guide__steps">
+                    <li>Connect your wallet on <a href="#showdisclaimer" target="_blank" rel="noopener">Stonksapp website</a></li>
+                    <li>Type BNB amount <mark>or</mark> click <strong>Replace icon</strong> and type STONK amount</li>
+                    <li>Type correct slippage amount (15% - 19%)</li>
+                    <li>Click <strong>Swap</strong></li>
+                    <li>Confirm transaction in MetaMask</li>
+                </ol>
+            </div>
+            <div class="guide__section">
+                <div class="guide__header">Place Stop loss & Take profit orders</div>
+                <ol class="guide__steps">
+                    <li>Connect your wallet on <a href="#showdisclaimer" target="_blank" rel="noopener">Stonksapp website</a></li>
+                    <li>Click on the <strong>Order</strong> tab</li>
+                    <li>Choose <strong>Stop loss</strong> and <strong>Take profit</strong></li>
+                    <li>Specify the number of tokens you want the order to be based on</li>
+                    <li>Select/type the difference or the exact price at which the order should be executed</li>
+                    <li>Set the slippage to 50 (only the required amount of gas will be used e.g. the limit will be 500000 and the transaction will only use 55000 which is 11% slippage)</li>
+                    <li>Give the contract access to the number of tokens entered above and then sign the future execution of the order via Metamask</li>
+                    <li>When the above conditions are met the order will be executed</li>
+                </ol>
+            </div>
+        </section>
+        <section id="navigate-to-dapp">
+            <button><img src="../src/logo.png" />Go to Stonksapp website</button>
         </section>
     </main>
     <footer>
@@ -107,6 +180,22 @@
     </footer>
 </div>
 <script src="../home.js"></script>
-<script src="dapp.js"></script>
+<script>
+    document.querySelector('button.disclaimer__accept').addEventListener('click', (ev) => {
+        location.href = 'https://app.stonks.cash';
+    });
+
+    document.querySelectorAll('a[href="#showdisclaimer"]').forEach((a) => {
+        a.addEventListener('click', (ev) => {
+            ev.preventDefault();
+            document.querySelector('#disclaimer').style.display = 'flex';
+        });
+    });
+
+    document.querySelector('#navigate-to-dapp > button').addEventListener('click', (ev) => {
+        document.querySelector('#disclaimer').style.display = 'flex';
+    });
+</script>
 </body>
+
 </html>

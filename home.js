@@ -19,6 +19,3 @@ document.querySelector('#donate-address').addEventListener('click', (ev) => {
         ev.target.classList.remove('copied');
     }, 2000);
 });
-
-const dapp = document.querySelector('.header__dapp');
-(Date.now() >= 1644177600000) && (dapp.href = '/pages/guide');
