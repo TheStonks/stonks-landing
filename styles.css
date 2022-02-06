@@ -5,7 +5,7 @@ header {
     height: 60px
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1350px) {
     header {
         padding: 0 20px
     }
@@ -194,7 +194,7 @@ section#introduction {
     display: flex
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1350px) {
     section#introduction {
         padding: 0 20px;
         margin-top: 200px;
@@ -286,7 +286,7 @@ section#introduction {
     background-size: 24px
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1350px) {
     .introduction__left {
         padding: 0 10px;
         text-align: center
@@ -314,7 +314,7 @@ section#introduction {
     width: 640px
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1350px) {
     .introduction__right {
         max-width: 640px;
         width: 100%;
@@ -396,7 +396,7 @@ section#tokenomics {
     overflow: hidden
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1350px) {
     section#tokenomics {
         justify-content: center
     }
@@ -414,7 +414,7 @@ section#tokenomics {
     cursor: default
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1350px) {
     .attribute {
         margin: 0 20px;
         margin-bottom: 40px
@@ -520,7 +520,7 @@ section#vision {
     border-radius: 4px
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1297px) {
     section#vision {
         border-radius: 0
     }
@@ -586,7 +586,7 @@ section#apps .app + .app {
     margin-top: 100px
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1350px) {
     section#apps .app {
         flex-direction: column-reverse;
         align-items: center;

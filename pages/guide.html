@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Stonks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../favicon-32x32.png" type="image/png">
+    <link rel="icon" href="../favicon-32x32.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="guide.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto:wght@400;500&display=swap">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PC2B2H7XES"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-PC2B2H7XES');
+    </script>
+    <script src="/live.js"></script>
+</head>
+
+<body>
+<div class="page__container">
+    <header>
+        <div class="logo__container">
+            <a href="/">
+                <img src="../src/logo.png" />
+                <p>stonks</p>
+            </a>
+        </div>
+        <button class="header__hamburger-menu"></button>
+        <nav>
+            <a class="header__dapp" href="./dapp">
+                <button class="blue">DApp public beta</button>
+            </a>
+            <button class="soon">Whitepaper</button>
+            <a href="mailto:stonks.cash@protonmail.com" rel="noopener">
+                <button>stonks.cash@protonmail.com</button>
+            </a>
+            <div class="nav__group">
+                <a href="https://twitter.com/StonksCoinBSC" target="_blank" rel="noopener">
+                    <button class="icon twitter"></button>
+                </a>
+                <a href="https://discord.gg/Ctg5cpHpZX" target="_blank" rel="noopener">
+                    <button class="icon discord"></button>
+                </a>
+                <a href="https://t.me/stonksCoinBsc" target="_blank" rel="noopener">
+                    <button class="icon telegram"></button>
+                </a>
+                <a href="https://www.reddit.com/r/stonkscoinbsc" target="_blank" rel="noopener">
+                    <button class="icon reddit"></button>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="disclaimer" style="display: none;">
+            <div class="disclaimer__container">
+                <h1>Disclaimer</h1>
+                <p>By proceeding further you confirm that you have read the guide on how to use BSC Testnet on your metamask wallet.</p>
+                <p>To report bugs, join our channel on Discord: <a href="https://discord.gg/QRx7UV6n" target="_blank" rel="noopener">discord.gg/QRx7UV6n</a></p>
+                <p>If you have any suggestions on how to improve the functioning or design of <span>the application</span>, please use the Discord server mentioned above.</p>
+                <p>Please keep in mind that the application is in the testing phase, every bug you find will be fixed and verified on an ongoing basis. Some functions and the whole application may sometimes be unavailable - this might happen at any given time and it means that works are being taken at that time. <span>The expected launch date</span> of the application depends on the course and duration of the tests.</p>
+                <p>Please note that the wallet connection using Testnet is completely secure. However, <span>if you are concerned</span>, please use the new wallet created specifically for the beta test.</p>
+                <p>If you have any questions please contact us on Discord or Telegram:<br/> <a href="https://t.me/stonksCoinBsc" target="_blank" rel="noopener">t.me/stonksCoinBsc</a></p>
+                <p>Thank you very much for your trust and cooperation.</p>
+                <button class="disclaimer__accept">I have read and understand</button>
+            </div>
+        </section>
+        <section id="guide">
+            <div class="guide__section">
+                <div class="guide__header">Install MetaMask</div>
+                <ol class="guide__steps">
+                    <li>Download and install <a href="https://metamask.io/download/" rel="noopener" target="_blank">official MetaMask browser extension</a></li>
+                    <li>Create a new wallet, MetaMask password and Secret Recovery Phrase</li>
+                    <li>Add BSC Testnet chain - used for testing purposes only</li>
+                </ol>
+            </div>
+            <div class="guide__section">
+                <div class="guide__header">Add BSC Testnet chain</div>
+                <ol class="guide__steps">
+                    <li>Open <strong>Networks</strong> menu in MetaMask</li>
+                    <li>Click <strong>Add Network</strong></li>
+                    <li>Setup a network:
+                        <div class="note">
+                            <div class="note__item">
+                                <span class="note__key">Network Name:</span>
+                                <span class="note__value">BSC Testnet</span>
+                            </div>
+                            <div class="note__item">
+                                <span class="note__key">New RPC URL:</span>
+                                <span class="note__value">https://data-seed-prebsc-1-s1.binance.org:8545/</span>
+                            </div>
+                            <div class="note__item">
+                                <span class="note__key">Chain ID:</span>
+                                <span class="note__value">97</span>
+                            </div>
+                            <div class="note__item">
+                                <span class="note__key">Currency Symbol:</span>
+                                <span class="note__value">BNB</span>
+                            </div>
+                            <div class="note__item">
+                                <span class="note__key">Block Explorer URL:</span>
+                                <span class="note__value">https://testnet.bscscan.com</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>Click <strong>Save</strong></li>
+                </ol>
+            </div>
+            <div class="guide__section">
+                <div class="guide__header">Add BNB to your wallet</div>
+                <ol class="guide__steps">
+                    <li>Copy your wallet's address in MetaMask</li>
+                    <li>Go to <a href="https://testnet.binance.org/faucet-smart" target="_blank" rel="noopener">Binance Smart Chain Faucet</a> page</li>
+                    <li>Paste your wallet's address</li>
+                    <li>Click <strong>Give me BNB</strong></li>
+                    <li>Wait a few seconds for the transaction to be completed</li>
+                </ol>
+            </div>
+            <div class="guide__section">
+                <div class="guide__header">Connect your wallet</div>
+                <ol class="guide__steps">
+                    <li>Go to <a href="#showdisclaimer" target="_blank" rel="noopener">Stonksapp website</a></li>
+                    <li>Click <strong>the wallet icon</strong> in the top right corner of the website</li>
+                    <li>Select your account in MetaMask</li>
+                    <li>Click <strong>Next</strong></li>
+                    <li>Click <strong>Connect</strong></li>
+                    <li>Click <strong>Sign</strong></li>
+                </ol>
+            </div>
+            <div class="guide__section">
+                <div class="guide__header">Swap</div>
+                <ol class="guide__steps">
+                    <li>Connect your wallet on Stonksapp website</li>
+                    <li>Type BNB amount <mark>or</mark> click <strong>Replace icon</strong> and type STONK amount</li>
+                    <li>Type correct slippage amount (15% - 19%)</li>
+                    <li>Click <strong>Swap</strong></li>
+                    <li>Confirm transaction in MetaMask</li>
+                </ol>
+            </div>
+        </section>
+        <section id="navigate-to-dapp">
+            <button><img src="../src/logo.png" />Go to Stonksapp website</button>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__links">
+            <a href="https://github.com/TheStonks" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://t.me/stonksCoinBsc" target="_blank" rel="noopener">Telegram</a>
+            <a href="https://discord.gg/Ctg5cpHpZX" target="_blank" rel="noopener">Discord</a>
+            <a href="https://twitter.com/StonksCoinBSC" target="_blank" rel="noopener">Twitter</a>
+            <a href="https://www.reddit.com/r/stonkscoinbsc" target="_blank" rel="noopener">Reddit</a>
+        </div>
+        <div class="footer__disclaimer">
+            Donate us: <strong id="donate-address">0x845725fd6d74640A70e7ddd7e44f4A185C6C1C5b</strong><br/>
+            Stonks project is mainly driven by the community, by sending a donation you support the project.<br/>
+            <br/>
+            Creators of Stonks are not liable for any loss when trading this cryptocurrency token.<br/>
+            Nothing on this page is financial advice.
+        </div>
+    </footer>
+</div>
+<script src="../home.js"></script>
+<script>
+    document.querySelector('button.disclaimer__accept').addEventListener('click', (ev) => {
+        location.href = 'https://app.stonks.cash';
+    });
+
+    document.querySelector('a[href="#showdisclaimer"]').addEventListener('click', (ev) => {
+        ev.preventDefault();
+        document.querySelector('#disclaimer').style.display = 'flex';
+    });
+
+    document.querySelector('#navigate-to-dapp > button').addEventListener('click', (ev) => {
+        document.querySelector('#disclaimer').style.display = 'flex';
+    });
+</script>
+</body>
+
+</html>
