@@ -8,6 +8,10 @@ const daysNumber = document.querySelector('.timer__span--days .timer__number');
 
 function refreshTimer() {
     let diff = targetDate - new Date();
+
+    if (diff < 0) {
+        location.href = '/pages/guide';
+    }
     
     diff = Math.floor(diff / 1000);
     const seconds = diff % 60;
