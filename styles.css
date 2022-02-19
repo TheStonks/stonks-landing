@@ -388,11 +388,177 @@ section#introduction {
     background-image: url("./src/speaker.svg")
 }
 
+section#bridge {
+    margin-top: 120px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#bridge h1 {
+    margin-top: -12px;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.bridge__icon {
+    height: 108px;
+    width: 108px;
+    background-image: url("./src/bridge.svg")
+}
+
+.bridge__phases {
+    margin-top: 70px;
+    display: flex;
+}
+
+.bridge-phase {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    cursor: default;
+}
+
+.bridge-phase__row + .bridge-phase__row {
+    margin-top: 20px;
+}
+
+.bridge-phase__row:nth-child(1) {
+    display: flex;
+    align-items: center;
+}
+
+.bridge-phase__number {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+    border-radius: 4px;
+    background-color: #191929;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.bridge-phase__arrow {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 35px;
+    width: 100%;
+    height: 0;
+    border: 2px dashed rgba(255, 255, 255, 0.25);
+}
+
+.bridge-phase__arrow::after {
+    content: '';
+    position: absolute;
+    top: -7px;
+    right: -18px;
+    height: 14px;
+    width: 11px;
+    background-image: url('./src/arrow.svg');
+}
+
+.bridge-phase:nth-child(4) .bridge-phase__arrow {
+    display: none;
+}
+
+.bridge-phase__title {
+    font-size: 24px;
+    font-weight: 500;
+    min-height: 40px;
+    color: #fed02f;
+}
+
+.bridge-phase__description {
+    margin-right: 30px;
+    color: #dadada;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.3em;
+    white-space: pre-line;
+}
+
+.bridge-phase__description--nopre {
+    white-space: normal;
+}
+
+.bridge-phase__description ul {
+    margin-left: 20px;
+}
+
+.bridge-phase:nth-child(4) .bridge-phase__description {
+    margin-right: 0;
+}
+
+.bridge-phase__description strong {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.bridge-phase__description a {
+    color: #fed02f;
+}
+
+@media screen and (max-width: 1350px) {
+    section#bridge {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .bridge__phases {
+        flex-direction: column;
+        max-width: 850px;
+    }
+
+    .bridge-phase {
+        position: relative;
+        flex-direction: row;
+    }
+
+    .bridge-phase + .bridge-phase {
+        margin-top: 80px;
+    }
+
+    .bridge-phase__row:nth-child(1) {
+        flex-direction: column;
+    }
+
+    .bridge-phase__row + .bridge-phase__row {
+        margin-top: 0;
+        margin-left: 20px;
+    }
+
+    .bridge-phase__arrow {
+        display: flex;
+        width: 0;
+        flex: 1;
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: -50px;
+    }
+
+    .bridge-phase__arrow::after {
+        left: -6px;
+        right: unset;
+        top: unset;
+        bottom: -17px;
+        transform: rotate(90deg);
+    }
+}
+
 section#tokenomics {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 240px;
+    margin-top: 210px;
+    padding-top: 30px;
     overflow: hidden
 }
 
