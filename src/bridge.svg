@@ -1,0 +1,21 @@
+<svg width="108" height="108" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.35" filter="url(#filter0_f_409_2555)">
+<circle cx="54" cy="54" r="24" fill="url(#paint0_radial_409_2555)"/>
+</g>
+<path d="M64.3599 66C69.1599 66 70.3599 63.3 70.3599 60V48C70.3599 44.7 69.1599 42 64.3599 42C59.5599 42 58.3599 44.7 58.3599 48V60C58.3599 63.3 59.5599 66 64.3599 66Z" fill="#5A4D2A" fill-opacity="0.35" stroke="#FED02F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M43.6401 66C38.8401 66 37.6401 63.3 37.6401 60V48C37.6401 44.7 38.8401 42 43.6401 42C48.4401 42 49.6401 44.7 49.6401 48V60C49.6401 63.3 48.4401 66 43.6401 66Z" fill="#5A4D2A" fill-opacity="0.35" stroke="#FED02F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M49.6401 54H58.3601" stroke="#FED02F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M33 54L37 54" stroke="#FED02F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M71 54H75" stroke="#FED02F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<filter id="filter0_f_409_2555" x="0" y="0" width="108" height="108" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="15" result="effect1_foregroundBlur_409_2555"/>
+</filter>
+<radialGradient id="paint0_radial_409_2555" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(54 54) rotate(90) scale(24)">
+<stop stop-color="#FED02F"/>
+<stop offset="1" stop-color="#FED02F" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>
