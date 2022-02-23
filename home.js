@@ -31,7 +31,7 @@ function refreshTimer() {
     let diff = Math.floor((targetDate - new Date()) / 1000);
     const s = diff % 60;
     const m = (diff = (diff - s) / 60) % 60;
-    const h = (diff = (diff - m) / 60) % 60;
+    const h = (diff = (diff - m) / 60) % 24;
     const d = Math.floor((diff - h) / 24);
 
     timerParts[0].innerText = d + ' days';
