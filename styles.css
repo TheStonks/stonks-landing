@@ -189,6 +189,103 @@ nav button.blue:hover {
     background-color: #2877ff
 }
 
+section#bridge-note {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    padding: 20px 40px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 701px) {
+    section#bridge-note {
+        margin-top: 140px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    section#bridge-note {
+        flex-direction: column;
+        margin-bottom: -60px;
+        padding: 30px 20px;
+        border-radius: 0;
+    }
+
+    section#bridge-note > p {
+        margin-bottom: 24px;
+        text-align: center;
+        line-height: 26px;
+    }
+
+    section#bridge-note > p > * {
+        display: block;
+    }
+}
+
+section#bridge-note > p {
+    flex: 1;
+    color: #e0e0e0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+section#bridge-note > p mark {
+    background-color: transparent;
+    color: #ef2e2e;
+    font-weight: 500;
+}
+
+section#bridge-note > p strong {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+section#bridge > p {
+    font-size: 18px;
+}
+
+.bridge-note__migrate-button {
+    position: relative;
+    margin-left: 20px;
+    height: 50px;
+    background-color: #fed02f;
+    border-radius: 4px;
+    color: #101020;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.bridge-note__migrate-button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(254, 208, 47, 0.2);
+    filter: blur(32px);
+    z-index: -1;
+}
+
+.bridge-note__migrate-button > a {
+    display: block;
+    padding: 0 24px;
+    height: 50px;
+    line-height: 50px;
+}
+
+@media screen and (max-width: 700px) {
+    .bridge-note__migrate-button > a {
+        padding: 0 40px;
+    }
+}
+
+span.bridge-note__timer > span {
+    white-space: nowrap;
+}
+
 section#introduction {
     margin-top: 140px;
     display: flex
