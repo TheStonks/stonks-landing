@@ -27,6 +27,8 @@ if (targetDate > new Date()) {
     document.querySelector('section#bridge-note').style.display = 'flex';
 }
 
+let timerInterval = null;
+
 function refreshTimer() {
     let diff = Math.floor((targetDate - new Date()) / 1000);
     const s = diff % 60;
@@ -34,11 +36,21 @@ function refreshTimer() {
     const h = (diff = (diff - m) / 60) % 24;
     const d = Math.floor((diff - h) / 24);
 
-    timerParts[0].innerText = d + ' days';
-    timerParts[1].innerText = h + ' hours';
-    timerParts[2].innerText = m + ' minutes';
-    timerParts[3].innerText = s + ' seconds';
+    if (d != 0) {
+        timerParts[0].innerText = d + ' day' + (d != 1 ? 's' : '');
+    }
+    else {
+        timerParts[0].innerText = '';
+    }
+    timerParts[1].innerText = h + ' hour' + (h != 1 ? 's' : '');
+    timerParts[2].innerText = m + ' minute' + (m != 1 ? 's' : '');
+    timerParts[3].innerText = s + ' second' + (s != 1 ? 's' : '');
+
+    if (!(d || h || m || s)) {
+        document.querySelector('section#bridge-note').style.display = 'none';
+        clearInterval(timerInterval);
+    }
 }
 
 refreshTimer();
-setInterval(() => refreshTimer(), 500);
+timerInterval = setInterval(() => refreshTimer(), 500);
