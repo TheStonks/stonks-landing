@@ -189,7 +189,7 @@ nav button.blue:hover {
     background-color: #2877ff
 }
 
-section#bridge-note {
+section#presale-note {
     display: flex;
     align-items: center;
     margin-top: 60px;
@@ -200,53 +200,53 @@ section#bridge-note {
 }
 
 @media screen and (max-width: 1100px) and (min-width: 701px) {
-    section#bridge-note {
+    section#presale-note {
         margin-top: 140px;
     }
 }
 
 @media screen and (max-width: 700px) {
-    section#bridge-note {
+    section#presale-note {
         flex-direction: column;
         margin-bottom: -60px;
         padding: 30px 20px;
         border-radius: 0;
     }
 
-    section#bridge-note > p {
+    section#presale-note > p {
         margin-bottom: 24px;
         text-align: center;
         line-height: 26px;
     }
 
-    section#bridge-note > p > * {
+    section#presale-note > p > * {
         display: block;
     }
 }
 
-section#bridge-note > p {
+section#presale-note > p {
     flex: 1;
     color: #e0e0e0;
     font-size: 18px;
     font-weight: 400;
 }
 
-section#bridge-note > p mark {
+section#presale-note > p mark {
     background-color: transparent;
     color: #ef2e2e;
     font-weight: 500;
 }
 
-section#bridge-note > p strong {
+section#presale-note > p strong {
     color: #ffffff;
     font-weight: 500;
 }
 
-section#bridge > p {
+section#presale > p {
     font-size: 18px;
 }
 
-.bridge-note__migrate-button {
+.presale-note__buy-button {
     position: relative;
     margin-left: 20px;
     height: 50px;
@@ -258,7 +258,7 @@ section#bridge > p {
     cursor: pointer;
 }
 
-.bridge-note__migrate-button::after {
+.presale-note__buy-button::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -269,7 +269,7 @@ section#bridge > p {
     z-index: -1;
 }
 
-.bridge-note__migrate-button > a {
+.presale-note__buy-button > a {
     display: block;
     padding: 0 24px;
     height: 50px;
@@ -277,12 +277,12 @@ section#bridge > p {
 }
 
 @media screen and (max-width: 700px) {
-    .bridge-note__migrate-button > a {
+    .presale-note__buy-button > a {
         padding: 0 40px;
     }
 }
 
-span.bridge-note__timer > span {
+span.presale-note__timer > span {
     white-space: nowrap;
 }
 
@@ -741,6 +741,11 @@ section#tokenomics {
     background-size: 60px
 }
 
+.attribute__icon.marketing {
+    background-image: url("./src/marketing.svg");
+    background-size: 60px
+}
+
 .attribute__icon.liquidity {
     background-image: url("./src/liquidity.svg");
     background-size: 50px
@@ -1159,6 +1164,12 @@ section#team .team__member p {
     font-weight: 400;
     text-align: center;
     letter-spacing: .2px
+}
+
+section#team .team__member img {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
 }
 
 section#memes {

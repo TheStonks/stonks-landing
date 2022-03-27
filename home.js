@@ -20,11 +20,11 @@ document.querySelector('#donate-address').addEventListener('click', (ev) => {
     }, 2000);
 });
 
-const targetDate = new Date('2022-02-28T19:00:00.000Z');
-const timerParts = document.querySelectorAll('.bridge-note__timer > span');
+const targetDate = new Date('2022-04-03T00:00:00.000Z');
+const timerParts = document.querySelectorAll('.presale-note__timer > span');
 
 if (targetDate > new Date()) {
-    document.querySelector('section#bridge-note').style.display = 'flex';
+    document.querySelector('section#presale-note').style.display = 'flex';
 }
 
 let timerInterval = null;
@@ -47,7 +47,7 @@ function refreshTimer() {
     timerParts[3].innerText = s + ' second' + (s != 1 ? 's' : '');
 
     if (!(d || h || m || s)) {
-        document.querySelector('section#bridge-note').style.display = 'none';
+        document.querySelector('section#presale-note').style.display = 'none';
         clearInterval(timerInterval);
     }
 }
