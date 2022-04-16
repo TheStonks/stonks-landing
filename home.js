@@ -20,7 +20,7 @@ document.querySelector('#donate-address').addEventListener('click', (ev) => {
     }, 2000);
 });
 
-const targetDate = new Date('2022-04-03T00:00:00.000Z');
+const targetDate = new Date('2022-04-23T00:00:00.000Z');
 const timerParts = document.querySelectorAll('.presale-note__timer > span');
 
 if (targetDate > new Date()) {
