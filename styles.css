@@ -726,9 +726,9 @@ section#tokenomics {
     background-size: 56px
 }
 
-.attribute__icon.lock {
-    background-image: url("./src/lock.svg");
-    background-size: 56px
+.attribute__icon.multichain {
+    background-image: url("./src/memes.svg");
+    background-size: 160px
 }
 
 .attribute__icon.redistribution {
