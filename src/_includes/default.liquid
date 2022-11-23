@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stonks</title>
+    <link rel="icon" href="{{ page | relative }}img/favicon-32x32.png" type="image/png" />
+    <link rel="icon" href="{{ page | relative }}img/favicon-32x32.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://use.typekit.net/jwa3agu.css" />
+    <link rel="stylesheet" href="{{ page | relative }}css/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao+Looped:wght@400;500;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet"> 
+     <script src="{{ page | relative }}js/main.js" defer></script>
+  </head>
+  <body>
+    {% include header.html %}
+
+    <main>
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+</body>
+<script defer>
+  const connectWalletBtn = document.getElementById('connect-wallet-button');
+
+  connectWalletBtn.addEventListener('click', event => {
+    let account;
+
+    ethereum.request({method: 'eth_requestAccounts'}).then(accounts => {
+      account = accounts[0];
+  });
+});
+
+  ethereum.request({method: 'eth_requestAccounts'}).then(accounts => {
+    if(accounts){
+      connectWalletBtn.classList.add('active');
+    }
+  });
+</script>
+</html>
