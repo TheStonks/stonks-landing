@@ -15,8 +15,8 @@ body{
   font-family: 'Noto Sans Lao Looped', sans-serif;
   background-color: #141627;
   color: white;
-  max-width: 1920px;
   margin: auto;
+  position: relative;
 }
 
 h1{
@@ -53,7 +53,7 @@ button{
 .btn-gradient{
   background-image: linear-gradient(45deg, #01ABE8 0%, #C242EF 51%, #01ABE8 100%);
   background-size: 200% auto;
-  transition: 0.8s;
+  transition: background 0.8s;
   color: white;
 }
 
@@ -109,7 +109,6 @@ button{
 .header__container {
   position: absolute;
   width: 100%;
-  max-width: 1920px;
   z-index: 999;
 }
 
@@ -303,6 +302,8 @@ button{
   display: block;
   opacity: 0;
   background: transparent;
+  left: 0;
+  top: 0;
 }
 
 .overlay.active{
@@ -320,7 +321,7 @@ button{
   width: 100vw;
   height: 56.25vw;
   max-width: 100%;
-  box-shadow: 0px -5px 8px 8px #141627 inset;
+  box-shadow: inset 0px -20px 7px -13px #141627;
 }
 
 
@@ -329,11 +330,9 @@ button{
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  padding-left: clamp(100px, 20vw, 400px);
+  padding-left: clamp(100px, 20vw, 1200px);
   max-width: 100%;
   padding-right: 20px;
-  /* padding-top: clamp(10px, 11vw, 200px);
-  padding-bottom: clamp(10px, 24vw, 450px); */
   width: 85vw;
   height: 45vw;
   
@@ -341,7 +340,7 @@ button{
 
 
 #hero .hero__container h1 {
-  font-size: clamp(48px, 3.3vw, 64px);
+  font-size: clamp(48px, 3.3vw, 288px);
   font-weight: 700;
   line-height: 1.3;
   margin-bottom: 32px;
@@ -352,15 +351,44 @@ button{
   width: 100%;
 }
 
-@media(min-width: 1920px){
+@media(min-width: 1921px){
   #hero{
     width: 100vw;
-    height: 1068.75px;
+    height: calc(56.25vw);
+    box-shadow: inset 0px -3.33vw 3vw 0.66vw #141627;
   }
 
   #hero .hero__container{
-    height: 1068.75px;
     width: auto;
+  }
+
+  #hero .hero__container h1 {
+    font-size: 3.5vw;
+    margin-bottom: 1.5vw;
+    max-width: 100%;
+  }
+
+  .hero__button-container .btn{
+    font-size: 1vw;
+    padding: 1vw 1.33vw;
+    border-radius: 0.66vw;
+  }
+  #connect-wallet-button img{
+    width: 51px;
+  }
+
+  #connect-wallet__container button::before{
+    width: 24px;
+    height: 24px;
+  }
+
+  #connect-wallet__container button::after{
+    width: 15px;
+    height: 15px;
+  }
+
+  .menu__list{
+    font-size: 28px;
   }
 }
 
@@ -650,6 +678,27 @@ position: relative;
   #crypto-prices{
     padding: 0 15px;
   }
+
+  #crypto-prices .crypto-prices__container .crypto-prices__content .crypto-prices__list{
+    gap: 8px;
+  }
+  #crypto-prices .crypto-prices__container .crypto-prices__content .crypto-prices__list .crypto-prices__price{
+    font-size: 13px;
+  }
+
+  .crypto-prices__change{
+    font-size: 10px;
+    gap: 3px;
+  }
+
+  .crypto-prices__change::before{
+    border-width: 0 5px 10px 5px;
+  }
+
+  #crypto-prices .crypto-prices__container .crypto-prices__content .crypto-prices__row--top .crypto-prices__text .crypto-prices__text--title{
+    font-size: 17px;
+    padding-bottom: 1rem;
+  }
 }
 
 /* INFO SECTION */
@@ -706,7 +755,7 @@ position: relative;
   font-weight: 500;
   letter-spacing: 1px;
   color: #D1D5E8;
-  max-width: 880px;
+  max-width: 920px;
   margin: 5rem auto;
 }
 
@@ -733,6 +782,7 @@ position: relative;
     padding: 15px 18px;
     font-size: 15px;
   }
+
 }
 
 @media(max-width: 500px){
@@ -1288,6 +1338,6 @@ display: none;
 
 @media(max-width: 499px){
   #roadmap img{
-    right: -40px;
+    width: 180px;
   }
 }
