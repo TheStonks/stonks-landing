@@ -16,7 +16,7 @@
   </head>
   <body>
     <div class="header__container">
-  <header id="header" class="container">
+  <header id="header">
     <div class="header__logo">
       <a href="/">
         <img
@@ -349,14 +349,17 @@
     let account;
 
     ethereum.request({method: 'eth_requestAccounts'}).then(accounts => {
-      account = accounts[0];
+      if(accounts){
+        connectWalletBtn.classList.add('active');
+      }
   });
 });
 
-  ethereum.request({method: 'eth_requestAccounts'}).then(accounts => {
-    if(accounts){
+  ethereum.request({method: 'eth_accounts'}).then(accounts => {
+    if(accounts.length){
       connectWalletBtn.classList.add('active');
     }
+    console.log(accounts);
   });
 </script>
 </html>
