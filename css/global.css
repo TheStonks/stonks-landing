@@ -122,30 +122,19 @@ button{
 }
 
 .header__logo {
-  font-size: 42px;
-  font-weight: 700;
-  font-style: italic;
   flex: 1 1 0%;
-  font-family: 'Ubuntu';
-}
-
-.header__logo a {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  letter-spacing: 1px;
-  color: white;
 }
 
 .header__logo img {
   max-width: 100%;
-  width: auto;
+  width: 287px;
   height: auto;
 }
 
 @media (max-width: 991px) {
-  .header__logo span {
-    display: none;
+  .header__logo img {
+    width: 60px;
+    height: 60px;
   }
 }
 .menu__list {
@@ -224,6 +213,7 @@ button{
 
   .header__logo img {
     width: 48px;
+    height: 48px;
   }
 
   .mobile-menu__button {
@@ -1091,25 +1081,14 @@ position: relative;
 }
 
 .footer__logo {
-  font-size: 42px;
-  font-weight: 700;
-  font-style: italic;
   flex: 1 1 0%;
   margin-bottom: 3rem;
-  font-family: 'Ubuntu';
 }
 
-.footer__logo a {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  letter-spacing: 1px;
-  color: white;
-}
 
 .footer__logo img {
   max-width: 100%;
-  width: auto;
+  width: 287px;
   height: auto;
 }
 
@@ -1155,14 +1134,16 @@ position: relative;
 }
 
 @media(max-width: 920px){
-  .footer__logo span{
-    display: none;
+  .footer__logo img{
+    width: 60px;
+    height: 60px;
   }
 }
 
 @media(max-width: 767px){
-  .footer__logo span{
-    display: block;
+  .footer__logo img{
+    width: 287px;
+    height: auto;
   }
   .footer__container{
     gap: 2.5rem;
