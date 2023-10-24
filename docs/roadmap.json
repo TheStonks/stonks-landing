@@ -3,7 +3,7 @@
     "id": "1", 
     "attributes": {
         "state": "completed",
-        "title": "DEFI",
+        "title": "Trading - tg bot",
         "description": "New idea"
     }
 },
@@ -11,7 +11,7 @@
     "id": "2", 
     "attributes": {
         "state": "completed",
-        "title": "Token Launch",
+        "title": "mixer",
         "description": "Launching Token Stonks on the Binance Smart Chain network. Token has native, passive reflections for holders."
     }
 },
@@ -19,15 +19,15 @@
     "id": "3", 
     "attributes": {
         "state": "completed",
-        "title": "Staking",
+        "title": "Ai audit",
         "description": "Staking allows Token holders to receive revenue from the stonks exchange."
     }
 },
 {
     "id": "4", 
     "attributes": {
-        "state": "completed",
-        "title": "DAO",
+        "state": "development",
+        "title": "Sniper mode - tg",
         "description": "DAO allows project development to be decided by Stonks token holders."
     }
 },
@@ -35,7 +35,7 @@
     "id": "5", 
     "attributes": {
         "state": "development",
-        "title": "Trading Bot: Snipe",
+        "title": "Token launch on ETH",
         "description": "The mechanism enables efficient and scheduled purchase of tokens on the BSC network."
     }
 },
