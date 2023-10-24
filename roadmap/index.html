@@ -16,15 +16,18 @@
   </head>
   <body>
     <div class="header__container">
-  <header id="header" class="container">
+  <header id="header">
     <div class="header__logo">
       <a href="/">
+        <picture>
+          <source media="(max-width: 991px)" srcset="../img/stonks-logo-mobile.svg" />
+          <source media="(min-width: 992px)" srcset="../img/stonks-logo.svg" />
         <img
-          src="../img/stonks-logo.png"
+          src="../img/stonks-logo.svg"
           alt="Stonks logo"
           title="Stonks logo"
         />
-        <span>STONKS</span>
+        </picture>
       </a>
     </div>
     
@@ -39,6 +42,7 @@
         <li class="menu__list-item"><a href="https://pancakeswap.finance/swap?outputCurrency=0xC2973496E7c568D6EEcBF1d4234A24aa2FD71bd8" target="_blank">TOKEN</a></li>
         <li class="menu__list-item"><a href="../docs/stonks_whitepaper_v1.pdf" target="_blank" aria-label="Read whitepaper">WHITEPAPER</a></li>
         <li class="menu__list-item"><a href="https://snapshot.org/#/doggetti.eth" target="_blank">DAO</a></li>
+        <li class="menu__list-item"><a href="/" target="_blank">ROADMAP</a></li>
       </ul>
     </nav>
     <div class="connect-wallet__container">
@@ -72,12 +76,16 @@
     <div class="footer__contact">
       <div class="footer__logo">
         <a href="../">
+          <picture>
+            <source media="(max-width: 767px)" srcset="../img/stonks-logo.svg" />
+            <source media="(max-width: 920px)" srcset="../img/stonks-logo-mobile.svg" />
+            <source media="(min-width: 921px)" srcset="../img/stonks-logo.svg" />
           <img
-            src="../img/stonks-logo.png"
+            src="../img/stonks-logo.svg"
             alt="Stonks logo"
             title="Stonks logo"
           />
-          <span>STONKS</span>
+          </picture>
         </a>
       </div>
       <div class="footer__socials">
@@ -349,14 +357,17 @@
     let account;
 
     ethereum.request({method: 'eth_requestAccounts'}).then(accounts => {
-      account = accounts[0];
+      if(accounts){
+        connectWalletBtn.classList.add('active');
+      }
   });
 });
 
-  ethereum.request({method: 'eth_requestAccounts'}).then(accounts => {
-    if(accounts){
+  ethereum.request({method: 'eth_accounts'}).then(accounts => {
+    if(accounts.length){
       connectWalletBtn.classList.add('active');
     }
+    console.log(accounts);
   });
 </script>
 </html>
