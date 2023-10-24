@@ -1,106 +1,74 @@
 [
     {
-    "id": "1", 
+    "id": "1",
     "attributes": {
         "state": "completed",
         "title": "Trading - tg bot",
-        "description": "New idea"
+        "description": "Ai infused TG trading bot"
     }
 },
 {
-    "id": "2", 
+    "id": "2",
     "attributes": {
         "state": "completed",
         "title": "mixer",
-        "description": "Launching Token Stonks on the Binance Smart Chain network. Token has native, passive reflections for holders."
+        "description": "Transfer of funds to and from multiwallet anonymously."
     }
 },
 {
-    "id": "3", 
+    "id": "3",
     "attributes": {
         "state": "completed",
         "title": "Ai audit",
-        "description": "Staking allows Token holders to receive revenue from the stonks exchange."
+        "description": "Ai analyzes the token's source code and presents how it works to the tg chat along with any bugs and vulnerabilities."
     }
 },
 {
-    "id": "4", 
+    "id": "4",
     "attributes": {
         "state": "development",
         "title": "Sniper mode - tg",
-        "description": "DAO allows project development to be decided by Stonks token holders."
+        "description": "Ultrafast buy new launches"
     }
 },
 {
-    "id": "5", 
+    "id": "5",
     "attributes": {
         "state": "development",
         "title": "Token launch on ETH",
-        "description": "The mechanism enables efficient and scheduled purchase of tokens on the BSC network."
+        "description": "Stonks token on Ethereum network"
     }
 },
 {
-    "id": "6", 
+    "id": "6",
     "attributes": {
         "state": "planned",
-        "title": "Charts, Swap & Limit Orders on BSC",
-        "description": "And DEX interface with capabilities and design like the classic exchanges. In the first step, support for Binance Smart Chain."
+        "title": "Limit orders",
+        "description": "Limit orders on tg."
     }
 },
 {
-    "id": "7", 
+    "id": "7",
     "attributes": {
         "state": "planned",
-        "title": "Crypto derivatives: Options on BSC",
-        "description": "Options for cryptocurrencies based on nobel award Black-Scholes model."
+        "title": "Dividends for stonks token holders",
+        "description": "Token holders get a share of the bot's profits"
     }
 },
 {
-    "id": "8", 
+    "id": "8",
     "attributes": {
         "state": "planned",
-        "title": "Trading Bot: Automated investment strategies",
-        "description": "Extensive, scheduled, custom operations on DEXes. "
+        "title": "Web app",
+        "description": "responsive web application including all tg bot functionality"
     }
 },
 {
-    "id": "9", 
+    "id": "9",
     "attributes": {
         "state": "planned",
-        "title": "Trading Bot: Market monitor",
-        "description": "Watcher for new tokens, dips, rises, and market analytics."
-    }
-},
-{
-    "id": "10", 
-    "attributes": {
-        "state": "planned",
-        "title": "Stonks Token: ETH & Bridge",
-        "description": "Stonks token on Ethereum network with bridge between Ethereum and Binance Smart Chain."
-    }
-},
-{
-    "id": "11", 
-    "attributes": {
-        "state": "planned",
-        "title": "Options: ETH",
-        "description": "Ethereum network support for cryptocurrency options."
-    }
-},
-{
-    "id": "11", 
-    "attributes": {
-        "state": "planned",
-        "title": "Stonks-Fiat Gate",
-        "description": "Buy Stonks token directly with fiat."
-    }
-},
-{
-    "id": "12", 
-    "attributes": {
-        "state": "planned",
-        "title": "The Stonks Chain",
-        "description": "Stonks Chain is a common layer designed to tokenize assets, primarily cryptocurrencies."
+        "title": "Multichain",
+        "description": "Adding the largest EVM-compatible chains to the bot."
     }
 }
 ]
