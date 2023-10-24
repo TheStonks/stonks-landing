@@ -56,7 +56,80 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*******************************/
 /***/ ((module) => {
 
-eval("module.exports = JSON.parse('[{\"id\":\"1\",\"attributes\":{\"state\":\"completed\",\"title\":\"DEFI\",\"description\":\"New idea\"}},{\"id\":\"2\",\"attributes\":{\"state\":\"completed\",\"title\":\"Token Launch\",\"description\":\"Launching Token Stonks on the Binance Smart Chain network. Token has native, passive reflections for holders.\"}},{\"id\":\"3\",\"attributes\":{\"state\":\"completed\",\"title\":\"Staking\",\"description\":\"Staking allows Token holders to receive revenue from the stonks exchange.\"}},{\"id\":\"4\",\"attributes\":{\"state\":\"completed\",\"title\":\"DAO\",\"description\":\"DAO allows project development to be decided by Stonks token holders.\"}},{\"id\":\"5\",\"attributes\":{\"state\":\"development\",\"title\":\"Trading Bot: Snipe\",\"description\":\"The mechanism enables efficient and scheduled purchase of tokens on the BSC network.\"}},{\"id\":\"6\",\"attributes\":{\"state\":\"planned\",\"title\":\"Charts, Swap & Limit Orders on BSC\",\"description\":\"And DEX interface with capabilities and design like the classic exchanges. In the first step, support for Binance Smart Chain.\"}},{\"id\":\"7\",\"attributes\":{\"state\":\"planned\",\"title\":\"Crypto derivatives: Options on BSC\",\"description\":\"Options for cryptocurrencies based on nobel award Black-Scholes model.\"}},{\"id\":\"8\",\"attributes\":{\"state\":\"planned\",\"title\":\"Trading Bot: Automated investment strategies\",\"description\":\"Extensive, scheduled, custom operations on DEXes. \"}},{\"id\":\"9\",\"attributes\":{\"state\":\"planned\",\"title\":\"Trading Bot: Market monitor\",\"description\":\"Watcher for new tokens, dips, rises, and market analytics.\"}},{\"id\":\"10\",\"attributes\":{\"state\":\"planned\",\"title\":\"Stonks Token: ETH & Bridge\",\"description\":\"Stonks token on Ethereum network with bridge between Ethereum and Binance Smart Chain.\"}},{\"id\":\"11\",\"attributes\":{\"state\":\"planned\",\"title\":\"Options: ETH\",\"description\":\"Ethereum network support for cryptocurrency options.\"}},{\"id\":\"11\",\"attributes\":{\"state\":\"planned\",\"title\":\"Stonks-Fiat Gate\",\"description\":\"Buy Stonks token directly with fiat.\"}},{\"id\":\"12\",\"attributes\":{\"state\":\"planned\",\"title\":\"The Stonks Chain\",\"description\":\"Stonks Chain is a common layer designed to tokenize assets, primarily cryptocurrencies.\"}}]');\n\n//# sourceURL=webpack://learnwithjason-demo-base/./src/docs/roadmap.json?");
+eval("module.exports = [\n" +
+    "    {\n" +
+    "    \"id\": \"1\",\n" +
+    "    \"attributes\": {\n" +
+    "        \"state\": \"completed\",\n" +
+    "        \"title\": \"Trading - tg bot\",\n" +
+    "        \"description\": \"Ai infused TG trading bot\"\n" +
+    "    }\n" +
+    "},\n" +
+    "{\n" +
+    "    \"id\": \"2\",\n" +
+    "    \"attributes\": {\n" +
+    "        \"state\": \"completed\",\n" +
+    "        \"title\": \"mixer\",\n" +
+    "        \"description\": \"Transfer of funds to and from multiwallet anonymously.\"\n" +
+    "    }\n" +
+    "},\n" +
+    "{\n" +
+    "    \"id\": \"3\",\n" +
+    "    \"attributes\": {\n" +
+    "        \"state\": \"completed\",\n" +
+    "        \"title\": \"Ai audit\",\n" +
+    "        \"description\": \"Ai analyzes the token's source code and presents how it works to the tg chat along with any bugs and vulnerabilities.\"\n" +
+    "    }\n" +
+    "},\n" +
+    "{\n" +
+    "    \"id\": \"4\",\n" +
+    "    \"attributes\": {\n" +
+    "        \"state\": \"development\",\n" +
+    "        \"title\": \"Sniper mode - tg\",\n" +
+    "        \"description\": \"Ultrafast buy new launches\"\n" +
+    "    }\n" +
+    "},\n" +
+    "{\n" +
+    "    \"id\": \"5\",\n" +
+    "    \"attributes\": {\n" +
+    "        \"state\": \"development\",\n" +
+    "        \"title\": \"Token launch on ETH\",\n" +
+    "        \"description\": \"Stonks token on Ethereum network\"\n" +
+    "    }\n" +
+    "},\n" +
+    "{\n" +
+    "    \"id\": \"6\",\n" +
+    "    \"attributes\": {\n" +
+    "        \"state\": \"planned\",\n" +
+    "        \"title\": \"Limit orders\",\n" +
+    "        \"description\": \"Limit orders on tg.\"\n" +
+    "    }\n" +
+    "},\n" +
+    "{\n" +
+    "    \"id\": \"7\",\n" +
+    "    \"attributes\": {\n" +
+    "        \"state\": \"planned\",\n" +
+    "        \"title\": \"Dividends for stonks token holders\",\n" +
+    "        \"description\": \"Token holders get a share of the bot's profits\"\n" +
+    "    }\n" +
+    "},\n" +
+    "{\n" +
+    "    \"id\": \"8\",\n" +
+    "    \"attributes\": {\n" +
+    "        \"state\": \"planned\",\n" +
+    "        \"title\": \"Web app\",\n" +
+    "        \"description\": \"responsive web application including all tg bot functionality\"\n" +
+    "    }\n" +
+    "},\n" +
+    "{\n" +
+    "    \"id\": \"9\",\n" +
+    "    \"attributes\": {\n" +
+    "        \"state\": \"planned\",\n" +
+    "        \"title\": \"Multichain\",\n" +
+    "        \"description\": \"Adding the largest EVM-compatible chains to the bot.\"\n" +
+    "    }\n" +
+    "}\n" +
+    "]\n\n//# sourceURL=webpack://learnwithjason-demo-base/./src/docs/roadmap.json?");
 
 /***/ })
 
